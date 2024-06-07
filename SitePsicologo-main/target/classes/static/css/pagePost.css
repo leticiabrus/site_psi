@@ -1,0 +1,92 @@
+.nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Pode ajustar este valor conforme necessário */
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #ffffff; /* Cor de fundo da navbar */
+}
+
+/* Estilo para os links na navbar */
+.navbar-nav .nav-link {
+    color: #000000; /* Cor dos links */
+    font-weight: bold; /* Fonte em negrito */
+}
+
+/* Estilo para o link ativo na navbar */
+.navbar-nav .nav-item.active .nav-link {
+    color: #ff0000; /* Cor do link ativo */
+}
+
+/* Estilo para o logo na navbar */
+.navbar-brand img {
+    margin-right: 10px; /* Espaçamento à direita do logo */
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-brand:hover img{
+    transform: scale(1.1); /*Aumenta a escala*/
+
+}
+
+
+
+.btn-icon {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1rem; /* Ajusta o tamanho do ícone para ser menor */
+    padding: 0.25rem; /* Ajusta o padding para deixar o botão pequeno */
+    margin-right: 1rem; /* Ajusta o espaçamento à direita */
+    display: flex;
+    align-items: center;
+}
+
+.btn-icon ion-icon {
+    pointer-events: none; /* Para garantir que o clique seja no botão, não no ícone */
+}
+
+ion-icon {
+    color: black;
+}
+
+
+.btn-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Ajusta o tamanho do ícone */
+    padding: 0.25rem; /* Ajusta o padding para deixar o botão pequeno */
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem; /* Espaçamento entre os botões */
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+.btn-icon:first-child {
+    margin-left: 0; /* Remove o espaçamento do primeiro botão */
+}
+
+.btn-icon ion-icon {
+    pointer-events: none; /* Para garantir que o clique seja no botão, não no ícone */
+}
+
+/* Adiciona a cor preta aos ícones */
+.text-black ion-icon {
+    color: black;
+}
+
+/* Transições para links de navegação */
+.nav-link {
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+/* Estilizações ao passar o mouse */
+.nav-link:hover {
+    color: #005a51; /* Troca a cor ao passar o mouse */
+    font-size: 1.2em; /* Expande o texto ao passar o mouse */
+}

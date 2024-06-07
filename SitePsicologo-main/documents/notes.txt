@@ -1,0 +1,39 @@
+# Anotações do projeto
+
+    # Exemplos de insert feitos no banco:
+        Exemplo 1:
+            INSERT INTO public.postagem(
+                id, autor, conteudo, data_postagem, resumo, titulo)
+            VALUES (1, 'Lucas', 'Em caso de investigação policial, eu declaro que não tenho envolvimento com este grupo e não sei como estou no mesmo, provavelmente fui inserido por terceiros, declaro que estou disposto a colaborar com as investigações e estou disposto a me apresentar a depoimento se necessário.',
+                '2024-05-03', 'Texto para polícia federal, negando envolvimento em qualquer crime cometido por terceiros.', 'Texto Para Polícia Federal');
+
+        Exemplo 2:
+            INSERT INTO public.postagem(
+                id, autor, conteudo, data_postagem, resumo, titulo)
+            VALUES (
+                2, 'Jackson Goudinho', 'Se olharmos a vida em seus pequenos detalhes, tudo parece bem ridículo. É como uma gota d`água vista num microscópio, uma só gota cheia de protozoários. Achamos muita graça como eles se agitam e lutam tanto entre si. Aqui, no curto período da vida humana, essa atividade febril produz um efeito cômico.',
+                '2024-05-03', 'Texto aleatorio que peguei da internet para exemplo.', 'Texto aleatório'
+            )
+
+
+		
+		CREATE TABLE IF NOT EXISTS public.dados_usuario
+		(
+			nome_completo character varying(255) COLLATE pg_catalog."default",
+			email character varying(255) COLLATE pg_catalog."default",
+			usuario character varying(255) COLLATE pg_catalog."default" NOT NULL,
+			senha character varying(255) COLLATE pg_catalog."default",
+			telefone character varying(255) COLLATE pg_catalog."default",
+			data_nascimento date,
+			CONSTRAINT login_pkey PRIMARY KEY (usuario)
+		)
+
+		TABLESPACE pg_default;
+
+		ALTER TABLE IF EXISTS public.dados_usuario
+			OWNER to postgres;
+			
+			
+		INSERT INTO public.dados_usuario(nome_completo, email, usuario, senha, telefone, data_nascimento)
+		VALUES ('admin', 'admin', 'admin', 'admin', 'admin', '2000-01-01');
+	

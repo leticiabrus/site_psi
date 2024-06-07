@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark" class="h-100">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Umdia.psico</title>
+	<!-- Link para o CSS do Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.4.0/css/ionicons.min.css" integrity="sha512-dzsGTn+jNZ1f/8JiQc1yWofrUNvpwgSmJL1clz0BDMaFGqyfqG8P+IlX6FZj46rkwHuFdkcOTMVunz55oalGkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+	<!-- Link para o arquivo de estilos personalizados -->
+	<link href="css/index.css" rel="stylesheet">
+	<script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+<!-- Barra de navegação -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- Marca do site com logo -->
+	<a class="navbar-brand" href="index.html">
+		<img src="https://cdn-icons-png.flaticon.com/512/2201/2201606.png" width="50" height="50" class="d-inline-block align-top" alt="Logo">
+		Umdia.psico
+	</a>
+	<!-- Botão para menu responsivo -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!-- Links de navegação -->
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">Página Inicial</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="createPost.html">Criar postagem</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="posts.html">Posts</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="registerPsicologo.html">Registrar Psicólogo</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="psicologos.html">Nossos Psicólogos</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!-- Botão de alternância flutuante -->
+<div class="toggle-switch" onclick="toggleDarkTheme()">
+	<label class="switch-label">
+		<input type="checkbox" class="checkbox">
+		<ion-icon name="contrast-outline" class="toggle-icon"></ion-icon>
+	</label>
+</div>
+
+<!-- Conteúdo principal -->
+<div class="container mt-5">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="jumbotron">
+				<h1 class="display-4">Umdia.psico</h1>
+				<p class="lead">Aqui você encontra recursos, artigos e informações sobre saúde mental.</p>
+				<hr class="my-4">
+				<p>No Umdia.psico acreditamos que a saúde mental é a base para uma vida plena e equilibrada. Nosso objetivo é fornecer informações, ferramentas e suporte para ajudar você a cuidar da sua mente e do seu bem-estar emocional. Aqui, você encontrará uma variedade de artigos escritos por especialistas em psicologia, abordando temas como ansiedade, depressão, estresse, autoajuda, e muito mais. Também oferecemos conselhos práticos para aplicar no dia a dia, promovendo um estilo de vida saudável e mentalmente equilibrado. Leia relatos inspiradores de pessoas que superaram desafios emocionais e encontraram caminhos para a saúde mental, e descubra recursos terapêuticos, como técnicas de terapia, exercícios de mindfulness e estratégias para desenvolver a resiliência emocional.
+					<br>
+					<br>
+					Além disso, oferecemos uma comunidade de apoio onde você pode participar de discussões e grupos de apoio, compartilhando suas experiências e aprendendo com os outros. Nosso compromisso é criar um espaço seguro e acolhedor, onde a conversa sobre saúde mental é aberta e sem tabus. Queremos empoderar você com o conhecimento e o apoio necessários para enfrentar os desafios da vida com mais confiança e serenidade.
+					<br>
+					<br>
+					<br>
+					Junte-se a nós nesta jornada de autoconhecimento e bem-estar. Sua mente merece esse cuidado!
+				</p>
+			</div>
+		</div>
+		<div class="col-md-4 d-flex align-items-center justify-content-center">
+			<img src="https://img.freepik.com/fotos-premium/coracao-humano-com-amor-de-flores-e-conceito-de-emocao-pessoa-de-bom-coracao-ajuda-e-caridade-generativa-ai_506134-37.jpg" class="img-fluid" alt="Imagem relacionada à saúde mental">
+		</div>
+	</div>
+</div>
+
+
+<!-- Rodapé -->
+<footer class="bg-light text-center text-lg-start">
+	<div class="container p-4">
+		<div class="row">
+			<!-- Seção sobre nós -->
+			<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+				<h5 class="text-uppercase">Sobre nós</h5>
+				<p>
+					Nosso site de psicologia oferece uma variedade de artigos e recursos para ajudar você a entender melhor sua saúde mental e encontrar caminhos para uma vida mais equilibrada.
+				</p>
+			</div>
+			<!-- Links úteis -->
+			<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+				<h5 class="text-uppercase">Links Úteis</h5>
+				<ul class="list-unstyled mb-0">
+					<li>
+						<a href="index.html" class="text-dark">Página Inicial</a>
+					</li>
+					<li>
+						<a href="createPost.html" class="text-dark">Criar Postagem</a>
+					</li>
+					<li>
+						<a href="posts.html" class="text-dark">Posts</a>
+					</li>
+					<li>
+						<a href="registerPsicologo.html" class="text-dark">Registrar Psicológo</a>
+					</li>
+					<li>
+						<a href="psicologos.html" class="text-dark">Nossos Psicólogos</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Contato -->
+			<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+				<h5 class="text-uppercase">Contato</h5>
+				<ul class="list-unstyled mb-0">
+				</ul>
+				<!-- Link para o Instagram como texto -->
+				<a href="https://www.instagram.com/umdia.psico/" class="instagram-link">
+					<ion-icon name="logo-instagram"></ion-icon>
+				</a>
+				<a href="https://wa.me/41997089210" class="whatsapp-link">
+					<ion-icon name="logo-whatsapp"></ion-icon>
+				</a>
+				<a href="https://www.youtube.com/" class="youtube-link">
+					<ion-icon name="logo-youtube"></ion-icon>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Scripts do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+.nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Pode ajustar este valor conforme necessário */
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+/* Cor de fundo e de texto da navbar quando o mouse passa por cima dos itens */
+.navbar-nav .nav-item:hover .nav-link {
+    background-color: #A9A9A9;
+    color: black; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas para um visual mais suave */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+/* Estilo para os cards dos psicólogos */
+.card {
+    transition: transform 0.3s;
+    display: flex;
+    height: 350px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+/* Estilo para o título da página */
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Estilo para informações específicas nos cards */
+.card-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.card-crp {
+    color: #6c757d; /* Cor cinza escuro */
+}
+
+/* Estilo para o link ativo na navbar */
+.navbar-nav .nav-item.active .nav-link {
+    color: #090000 !important;
+    font-weight: bold;
+}

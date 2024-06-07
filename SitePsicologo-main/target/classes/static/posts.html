@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Posts - Site de Psicologia</title>
+	<!-- Link para o CSS do Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Link para o arquivo de estilos personalizados -->
+	<link href="css/index.css" rel="stylesheet">
+	<link href="css/posts.css" rel="stylesheet">
+	<!-- Link para a fonte Nunito Sans do Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+	<script src="js/scriptsPosts.js"></script>
+</head>
+
+<body onload="getResponseApi()">
+
+<!-- Barra de navegação -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- Marca do site com logo -->
+	<a class="navbar-brand" href="index.html">
+		<img src="https://cdn-icons-png.flaticon.com/512/2201/2201606.png" width="50" height="50" class="d-inline-block align-top" alt="Logo">
+		Umdia.psico
+	</a>
+	<!-- Botão para menu responsivo -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!-- Links de navegação -->
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Página Inicial</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="createPost.html">Criar postagem</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="posts.html">Posts</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="registerPsicologo.html">Registrar Psicólogo</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="psicologos.html">Nossos Psicólogos</a>
+			</li>
+		</ul>
+	</div>
+
+<i></i>
+	
+</nav>
+
+<!-- Seção de postagens -->
+<div class="container mt-5" id="postagens">
+	<h2>Postagens Recentes</h2>
+	<div class="row"></div>
+</div>
+
+<!-- Scripts do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

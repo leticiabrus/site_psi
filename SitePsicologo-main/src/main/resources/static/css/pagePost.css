@@ -1,0 +1,99 @@
+.nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Pode ajustar este valor conforme necessário */
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+/* Estilo da barra de navegação */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cor de fundo e de texto da navbar quando o mouse passa por cima dos itens */
+.navbar-nav .nav-item:hover .nav-link {
+    background-color: #A9A9A9;
+    color: black; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas para um visual mais suave */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+
+.nav-link:{
+    color: #005a51; /* Troca a cor ao passar o mouse */
+    font-size: 1.2em !important; /* Expande o texto ao passar o mouse */
+}
+
+/* Estilo da marca da navbar */
+.navbar-brand {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand:hover img{
+    transform: scale(1.1); /* aumenta a escala*/
+
+}
+
+/* Margem direita para a logo */
+.navbar-brand img {
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo dos links da navbar */
+.navbar-nav .nav-link {
+    font-size: 1.1em;
+}
+
+/* Estilo para o link ativo na navbar */
+.navbar-nav .nav-item.active .nav-link {
+    color: #090000 !important;
+    font-weight: bold;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1rem; /* Ajusta o tamanho do ícone para ser menor */
+    padding: 0.25rem; /* Ajusta o padding para deixar o botão pequeno */
+    margin-right: 1rem; /* Ajusta o espaçamento à direita */
+    display: flex;
+    align-items: center;
+}
+
+.btn-icon ion-icon {
+    pointer-events: none; /* Para garantir que o clique seja no botão, não no ícone */
+}
+
+ion-icon {
+    color: black;
+}
+
+
+.btn-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem; /* Ajusta o tamanho do ícone */
+    padding: 0.25rem; /* Ajusta o padding para deixar o botão pequeno */
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem; /* Espaçamento entre os botões */
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+.btn-icon:first-child {
+    margin-left: 0; /* Remove o espaçamento do primeiro botão */
+}
+
+.btn-icon ion-icon {
+    pointer-events: none; /* Para garantir que o clique seja no botão, não no ícone */
+}
+
+/* Adiciona a cor preta aos ícones */
+.text-black ion-icon {
+    color: black;
+}
+

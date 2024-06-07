@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Psicólogo - Site de Psicologia</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o arquivo de estilos personalizados -->
+    <link href="css/updatePsicologo.css" rel="stylesheet">
+    <!-- Link para a fonte Nunito Sans do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="js/scriptsUpdatePsicologo.js"></script>
+</head>
+
+<body onload="getResponseApi()">
+
+<!-- Barra de navegação -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Marca do site com logo -->
+    <a class="navbar-brand" href="index.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/2201/2201606.png" width="50" height="50" class="d-inline-block align-top" alt="Logo">
+        Umdia.psico
+    </a>
+    <!-- Botão para menu responsivo -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Links de navegação -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="createPost.html">Criar postagem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registerPsicologo.html">Registrar Psicólogo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="psicologos.html">Nossos Psicólogos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Seção de registro de psicólogo -->
+<div class="container mt-5">
+    <h2>Atualizar dados do psicólogo</h2>
+    <form>
+        <!-- Nome Completo -->
+        <div class="form-group">
+            <label for="fullName">Nome Completo</label>
+            <textarea class="form-control" id="fullName" rows="1" placeholder="Nome completo..."></textarea>
+        </div>
+        <!-- Data de Nascimento -->
+        <div class="form-group">
+            <label for="birthDate">Data de Nascimento</label>
+            <br>
+            <input type="date" id="birthDate">
+        </div>
+        <!-- Data de Formação -->
+        <div class="form-group">
+            <label for="graduationDate">Data de Formação</label>
+            <br>
+            <input type="date" id="graduationDate">
+        </div>
+        <!-- Resumo do Currículo -->
+        <div class="form-group">
+            <label for="resumeSummary">Resumo do Currículo</label>
+            <textarea class="form-control" id="professionalResume" rows="3" placeholder="Resumo do currículo..."></textarea>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <textarea class="form-control" id="email" rows="1" placeholder="Email..."></textarea>
+        </div>
+        <!-- CRP -->
+        <div class="form-group">
+            <label for="crp">CRP</label>
+            <textarea type="text" class="form-control" id="crp" placeholder="CRP..."></textarea>
+        </div>
+        <!-- Botões -->
+        <div class="d-flex justify-content-start">
+            <button type="button" onclick="updatePsicologo()" class="btn btn-primary">Atualizar</button>
+            <a href="psicologos.html" class="btn btn-primary">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+<!-- Scripts do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

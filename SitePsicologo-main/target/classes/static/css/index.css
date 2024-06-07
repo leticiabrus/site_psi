@@ -1,0 +1,182 @@
+/* Estilos gerais */
+.nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Pode ajustar este valor conforme necessário */
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover {
+    color: #005a51; /* Troca a cor ao passar o mouse */
+    font-size: 1.2em !important; /* Expande o texto ao passar o mouse */
+}
+
+/* Estilo da marca da navbar */
+.navbar-brand {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand:hover img{
+    transform: scale(1.1); /* aumenta a escala*/
+
+}
+
+/* Margem direita para a logo */
+.navbar-brand img {
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo dos links da navbar */
+.navbar-nav .nav-link {
+    font-size: 1.1em;
+}
+
+/* Estilo para o link ativo na navbar */
+.navbar-nav .nav-item.active .nav-link {
+    color: #090000 !important;
+    font-weight: bold;
+}
+
+/* Estilo do jumbotron */
+.jumbotron {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Garantir alinhamento à esquerda */
+}
+
+/* Estilo do título principal do jumbotron */
+.jumbotron .display-4 {
+    font-weight: bold;
+}
+
+/* Estilo do texto principal do jumbotron */
+.jumbotron .lead {
+    font-size: 1.2em;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #f1f1f1;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos títulos das seções do rodapé */
+footer h5 {
+    font-weight: bold;
+}
+
+/* Estilo dos links do rodapé */
+footer a {
+    color: #000000;
+}
+
+/* Efeito de hover nos links do rodapé */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo da área de direitos autorais no rodapé */
+footer .text-center {
+    background-color: #e9ecef;
+    padding: 1rem 0;
+    text-align: left; /* Garantir alinhamento à esquerda */
+}
+
+/* botão de login */
+button {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #fffdfd 0%, #ffffff 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 9em;
+}
+
+/*botão instagram */
+
+ion-icon {
+    font-size: 32px;
+}
+
+
+/* botão flutuante */
+
+
+.toggle-switch {
+    position: fixed;
+    bottom: 20px; /* ajuste conforme necessário */
+    right: 20px; /* ajuste conforme necessário */
+}
+
+.switch-label {
+    display: block;
+    width: 60px;
+    height: 34px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: black; /* cor inicial */
+}
+
+.toggle-icon.active {
+    color: black; /* cor quando clicado */
+}
+
+body.dark {
+    background-color: #121212; /* cor de fundo escura */
+    color: #fff; /* cor do texto */
+}
+
+/* imagem */
+
+/* Estilizando a imagem para ter uma transição suave */
+#interactive-image {
+    transition: transform 0.3s ease;
+}
+
+/* Quando o mouse passa por cima da imagem, ela aumenta de tamanho */
+#interactive-image:hover {
+    transform: scale(1.1);
+}
